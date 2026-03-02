@@ -28,7 +28,7 @@ class CvController extends Controller
     public function index(Request $request)
     {
         $search = $request->search;
-        $cvs = Cv::when($search,function($query) use ($search){
+        $cvs = Cv::when($srceah,function($query) use ($search){
             $query->where('sector','like','%'.$search.'%');
         })->get();
 

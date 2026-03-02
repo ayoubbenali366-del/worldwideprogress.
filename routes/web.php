@@ -7,8 +7,8 @@ Route::get('/', [CvController::class,'create']);
 Route::post('/store', [CvController::class,'store']);
 
 
-Route::get('/admin/login', [AdminController::class,'loginForm']); // show form
-Route::post('/admin/login', [AdminController::class,'login']);    // handle login
+Route::get('/admin/login', [AdminController::class,'loginForm']); 
+Route::post('/admin/login', [AdminController::class,'login']);    
 
 
 Route::get('/admin/logout', [AdminController::class,'logout']);
