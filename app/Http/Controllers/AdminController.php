@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Hash;
 class AdminController extends Controller
 {
     public function loginForm() {
-        return view('admin-login'); // show login form
+        return view('admin-login'); 
     }
 
     public function login(Request $request) {

@@ -8,7 +8,7 @@ class AdminMiddleware
     public function handle(Request $request, Closure $next)
     {
         if (!session('is_admin')) {
-            return redirect('/'); // if not admin, go to user page
+            return redirect('/'); 
         }
         return $next($request);
     }
